@@ -1,3 +1,5 @@
+#Relatively un-optimised version of the app
+
 import tkinter as tk
 from tkinter import ttk
 import math

@@ -25,7 +25,7 @@ Just clone this repository (main branch) or download the source code.
 1. Run the program by executing the Python script (or running directly from IDE):
 
    ```
-   python loan_calculator.py
+   python calc_new.py
    ```
 
 2. The Loan Calculator GUI will appear.
