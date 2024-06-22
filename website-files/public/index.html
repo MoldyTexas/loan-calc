@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loan Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="dark-mode">
+    <div id="main-page" class="container">
+        <h1>Loan Calculator</h1>
+        <div class="form-group">
+            <label for="principal">Principal Amount:</label>
+            <input type="number" id="principal" value="3000000">
+        </div>
+        <div class="form-group">
+            <label for="interest">Annual Interest Rate (%):</label>
+            <input type="number" id="interest" step="0.01">
+        </div>
+        <div class="form-group">
+            <label for="tenure">Loan Tenure (Years):</label>
+            <input type="number" id="tenure" value="14">
+        </div>
+        <div class="form-group">
+            <label for="foreclosure">Foreclosure Period (Years):</label>
+            <input type="number" id="foreclosure" value="7">
+        </div>
+        <button id="calculate" class="calculate-button">Calculate</button>
+    </div>
+    <div id="results-page" class="container" style="display:none;">
+        <h1 style="padding-top: 20px;">Loan Calculation Results</h1>
+        <div class="form-group">
+            <label for="currency">Currency:</label>
+            <select id="currency">
+                <option value="INR">INR</option>
+                <option value="EUR">EUR</option>
+                <option value="USD">USD</option>
+                <option value="GBP">GBP</option>
+            </select>
+        </div>
+        <div id="results"></div>
+        <div id="schedule-container">
+            <table id="schedule">
+                <thead>
+                    <tr>
+                        <th>Month</th>
+                        <th>Principal</th>
+                        <th>Interest</th>
+                        <th>Payment</th>
+                        <th>Balance</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </div>
+        <button id="back-button" class="back-button">Back</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
